@@ -1,0 +1,253 @@
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 710px;
+    height: 400px;
+    background-color: #222831;
+    border-radius: 25px;
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    margin-top: 260px;
+    margin-left: -10px;
+}
+
+
+.weather-side {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0 0 35px -10px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(135deg, #72edf1 10%, #5151e6 100%);
+    border-radius: 25px 0 0 25px;
+    opacity: 0.8;
+}
+
+.date-container {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+}
+
+.date-container .date-day {
+    display: block;
+    margin-top: 4px;
+}
+
+.date-dayname {
+    display: block;
+    color: white;
+    font-weight: 600;
+}
+
+#location {
+    display: block;
+    margin-top: 4px;
+}
+
+.weather-conteiner {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.weather-temp {
+    font-size: 4em;
+}
+
+.weather-desc {
+    font-size: 20px;
+}
+
+/* 右边部分 */
+
+.info-side {
+    float: right;
+    /* background-color: red; */
+    padding-top: 25px;
+    margin-right: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.today-info {
+    /* background-color:blue; */
+    padding: 15px 15px 10px 15px;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.today-info div {
+    margin-bottom: 10px;
+}
+
+.today-info .title {
+    float: left;
+}
+
+.today-info .value {
+    float: right;
+}
+
+.week-container {
+    margin: 10px 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.4);
+    /* margin-left: -40px; */
+    height: 130px;
+    width: 330px;
+    overflow: hidden;
+}
+
+.week-list {
+    display: flex;
+    transition: 300ms;
+    /* transform: translate3d(-35.5px, 0px, 0px) */
+}
+
+.week-list li {
+    /* float: left; */
+    margin-right: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    transition: 200ms;
+    height: 130px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.week-list li span {
+    display: inline-block;
+}
+
+.week-list li:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #222831;
+}
+
+.week-list li:first-child {
+    /* transform: scale(1.1); */
+    background-color: #ffffff;
+    color: #222831;
+}
+
+.week-list .day-name {
+    width: 70px;
+    margin-left: -14px;
+    margin-top: 10px;
+    /* text-align: center; */
+    white-space: nowrap;
+    font-size: small;
+
+}
+
+.week-list .day-temp {
+    margin-top: 10px;
+    text-align: center;
+    /* font-size: 14px; */
+    font-weight: bold;
+    font-size: small;
+
+}
+
+.week-list .day-wea {
+    margin-top: 10px;
+    white-space: nowrap;
+    font-size: small;
+    width: 70px;
+    margin-left: -14px;
+
+}
+
+
+/* 字体图标 */
+
+#weather-1 {
+    font-size: 70px;
+}
+
+.but-left {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    cursor: pointer;
+}
+
+.but-right {
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.tag-list {
+    width: 100px;
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #ccc;
+    height: 20px;
+    line-height: 20px;
+    
+    
+}
+
+.tag-list:hover {
+    color: white;
+
+}
+
+
+.plus-icon-enter-active {
+    transition: opacity .5s;
+}
+
+.plus-icon-enter {
+    opacity: 0;
+}
+
+.plus-icon-leave-active {
+    transition: opacity .5s;
+}
+
+.plus-icon-leave-to {
+    opacity: 0;
+}
+.kk{   
+    width: 0px;
+}
