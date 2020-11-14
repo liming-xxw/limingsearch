@@ -64,6 +64,7 @@ export default class Main extends Vue {
       title: "内容",
       items: [
         { title: "链接管理", path: "/link/list" },
+        { title: "背景图管理", path: "/image/list" },
       ],
     },
     {
